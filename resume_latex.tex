@@ -1,0 +1,434 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,headsep=1.05cm,headheight=0.75cm,left=3cm,top=1.2cm,right=0.5in,bottom=3cm,includeheadfoot]{geometry}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{lastpage}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+ \addtolength{\textwidth}{1in}
+ \addtolength{\topmargin}{-.5in}
+ \addtolength{\textheight}{1.0in}
+
+
+% add page number
+\cfoot{\qquad \qquad \thepage\ of \pageref{LastPage}}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\makeatletter
+\newcommand{\github}[1]{%
+   \href{#1}{\faGithubSquare}%
+}
+\makeatother
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{graphicx,xcolor,fontawesome}
+\definecolor{myblue}{RGB}{29,57,127}
+\definecolor{myred}{RGB}{200,10,10}
+\newcommand{\seticon}[1]{\textcolor{myblue}{\csname #1\endcsname}}
+
+
+
+\begin{document}
+% \faLinkedin,
+% \faStackExchange, and \faStackOverflow
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Juo-Tung Chen} \\ \vspace{13pt}
+    %\textbf{ \scshape Name: } %$|$ 
+    % \textbf{ \scshape U-M ID: 49858606} $|$ 
+    %\textbf{ \scshape Electrical \& Computer Engineering M.S. at UMich } \\ \vspace{1pt}
+
+    % Address
+    %\href{https://}{\underline{\seticon{faMapMarker} 6F., No. 456, Zhongzheng Rd., Shilin Dist., Taipei City 111, Taiwan (R.O.C.) }} \\
+    
+    %% with icon
+    % \href{https://}{{\seticon{faMapMarker} Baltimore MD}} $|$ \href{mailto:chenjuotung@gmail.com}{\underline{\seticon{faAt} chenjuotung@gmail.com}} $|$ 
+    % \small {\seticon{faPhone} +1(240) 565-5434 }   \\ \vspace{4pt} 
+    % %\href{https://jjcc0704.wixsite.com/projects}{\underline{\large \seticon{faChain} {Portfolio website}} $|$ 
+    % \href{www.linkedin.com/in/juo-tung-chen/}{\underline{ \seticon{faLinkedinSquare} {www.linkedin.com/in/juo-tung-chen}}}
+
+    \href{https://}{{\seticon{faMapMarker} Baltimore MD}} $|$ \small {\seticon{faPhone} +1(240) 565-5434 }   $|$ \href{mailto:jchen396@jhu.edu}{ \seticon{faAt} \underline{jchen396@jhu.edu}} $|$ 
+    % \href{https://github.com/JuoTungChen}{ \seticon{\faGithubSquare} \underline{{https://github.com/JuoTungChen}}}
+    
+    % \\ \vspace{4pt} 
+    \href{https://jjcc0704.wixsite.com/projects}{\seticon{faChain} \underline{ {Portfolio website}}} $|$ 
+    \href{www.linkedin.com/in/juo-tung-chen/}{\seticon{faLinkedinSquare} \underline{ www.linkedin.com/in/juo-tung-chen}}
+
+
+
+    %% without icon
+    % \href{https://}{{ Baltimore MD}} $|$ \small { +1(240) 565-5434 }   $|$ \href{mailto:jchen396@jhu.edu}{\underline{ jchen396@jhu.edu}} $|$ 
+    % % \\ \vspace{4pt} 
+    % %\href{https://jjcc0704.wixsite.com/projects}{\underline{\large \seticon{faChain} {Portfolio website}} $|$ 
+    % \href{www.linkedin.com/in/juo-tung-chen/}{\underline{  {www.linkedin.com/in/juo-tung-chen}}}
+    
+    % Personal website
+    
+    
+    % % Address
+    % \href{https://}{\underline{\seticon{faMapMarker}  }}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{ \textbf{Education}}
+\vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JOHNS HOPKINS UNIVERSITY}{{Maryland}} 
+      {\textbf{M.S.E. in Robotics - Perception and Cognitive Systems Track }}{Aug. 2022 - May. 2024 (expected)} \vspace{3pt}
+      
+      \resumeSubheading
+      {NATIONAL TAIWAN UNIVERSITY}{{Taipei, Taiwan}}
+      {\textbf{B.S. in Biomechatronics Engineering} (GPA: 3.72/4.0)}{Sept. 2017 -- Jun. 2022} \vspace{3pt}
+    %   {Master of Science in Mechanical Engineering}{Jan. 2020 -- Present}
+    %   \resumeItemListStart
+        % \resumeItem{GPA Overall: 3.72/4.00 (3.73/4.3), 143 credits}
+        % \resumeItem{Last 60 credits GPA: 3.80/4.00}
+        % \resumeItem{Coursework: Compressible Gas Dynamics, Introduction to Machine Learning for Materials, Fundamentals and Applications of Combustion, Advanced Heat and Mass Diffusion, Engineering Analysis, Foundations and Applications of Data Mining (PySpark)}
+        % \resumeItem{Relevant Coursework: Compressible Gas Dynamics, Introduction to Machine Learning for Materials, Fundamentals and Applications of Combustion, Advanced Heat and Mass Diffusion}
+    % \resumeItemListEnd
+      
+    % \resumeSubheading
+    %   {UNIVERSITY OF CALIFORNIA, BERKELEY}{{Berkeley, CA}}
+    % %   {Bachelor of Engineering in Aerospace Engineering}{Sept. 2014 -- Jun. 2018}
+    %   {\textbf{Overseas Summer Program}}{Jul. -- Sept. 2019} 
+     % \resumeItemListStart
+        % \resumeItem{Awards: Academic Achievement Award (2018), Mr. You-Hsin Chien Scholarship (2018)}
+    %     \resumeItem{GPA Overall: 3.628/4.00, 158 credits}
+    %\resumeItemListEnd
+    
+    %    \resumeSubheading
+    %  {Tokyo Institute of Technology}{\textbf{Tokyo, Japan}}
+    %   {Bachelor of Engineering in Aerospace Engineering}{Sept. 2014 -- Jun. 2018}
+    %  {Exchange Student Program}{Dec. 2021 -- Mar. 2022 (expected)}
+     % \resumeItemListStart
+        % \resumeItem{Awards: Academic Achievement Award (2018), Mr. You-Hsin Chien Scholarship (2018)}
+    %     \resumeItem{GPA Overall: 3.628/4.00, 158 credits}
+    %\resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{\textbf{Skills}}
+
+      \resumeItemListStart
+        \resumeItem{\textbf{Programming language:} C/C++, Python,  Matlab, \LaTeX, HTML, CSS, Javascript}
+        \resumeItem{\textbf{Software:} ROS, GIT, Docker, SolidWorks, Simulink, QT, Rviz, Gazebo, MoveIT, OpenCV, MySQL, Pytorch}
+        \resumeItem{\textbf{Operating system:} Linux, Windows, MacOS} 
+        %\resumeItem{Qualifications: TOEFL 106 (R30/L28/S24/W24), GRE 325 (V:156, Q:169, AW:3.5)} 
+        \resumeItem{\textbf{Embedded Systems:} Raspberry Pi, Arduino, TX2, Concerto(F28M3X)}
+        
+      \resumeItemListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Internship Experience}}
+    \resumeSubHeadingListStart
+
+%%% Coretronic %%%
+
+    \resumeSubheading
+        {\textbf{Coretronics Intelligent Robotics Corporation}}{\textbf{Hsinchu, Taiwan}}
+        {\textbf{R$\&$D Intern in AI Team}}{Jul. -- Sept. 2020}
+
+          \resumeItemListStart
+            \resumeItem{Implemented system identification using Matlab and constructed a 2D simulation for autonomous forklift using Simulink, QT, C++, and OpenCV}
+            \resumeItem{Performed research on Convex Elastic Smoothing algorithm and developed a Double Continuous Curvature path planning algorithm with an error $<$ 3\%}
+            
+          \resumeItemListEnd         
+          
+  \resumeSubHeadingListEnd
+
+
+    %-----------PROJECTS-----------
+\section{\textbf{Research Experience}}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {\textbf{Course Projects at JHU}}{Maryland}
+          {\textbf{Machine Perception}}{Oct. -- Nov. 2022}
+
+          \resumeItemListStart
+
+            \resumeItem{Implemented GoogLeNet using Pytorch and trained on CIFAR-10 dataset with an accuracy of 92.68 \%}
+
+            \resumeItem{Applied three adversarial attacks including Fast Gradient Sign Method (FGSM), Noise, and Semantic attack} 
+            
+            \resumeItem{Introduced Defensive-Distillation as a defense mechanism against FGSM attack and successfully retained an accuracy of 89.13 \% instead of 28.15 \% without defense} 
+            
+          \resumeItemListEnd
+
+
+    
+  %%% Lab %%%  
+    %% RMML %%
+    \resumeSubheading
+      {\textbf{National Taiwan University, Robots and Medical Mechatronics Lab}}{Taipei, Taiwan}
+      {\textbf{Collaborative Tea-Harvesting Robot}}{Jul. 2019 -- Aug. 2021}
+
+        \resumeItemListStart
+
+            \resumeItem{Created an intelligent vehicle capable of carrying tea harvesting tool with a side-by-side walking feature and object avoidance to pluck tea with a human worker collaboratively}
+
+            \resumeItem{Devised path planning with Reed \& Shepp curve to perform autonomous turns between tea trees}
+            
+            \resumeItem{Performed object avoidance and SLAM using Lidar through Robot Operating System (ROS)}
+            
+            % \resumeItem{Demonstrated the robot at Taiwan International Agricultural Machinery and Materials Exhibition 2020}
+             
+            % \resumeItem{Presented at Web-based Agro-biological Resource Engineering Educational Program (Tsukuba, Japan)}
+        \resumeItemListEnd
+        
+      \resumeProjectHeading
+      {\textbf{Intelligent sensing and precise cultivating system for tomato growth in greenhouses}}{}
+        \resumeItemListStart
+            \resumeItem{Led a team of 5 undergraduate students to conduct research activities and organized tasks for team members}
+        
+            \resumeItem{Utilized SolidWorks to design a 5 DoF robotic arm equipped with a Chlorophyll Fluorescence Imaging sensor to automatically detect water stress within a tomato plant}
+            
+            \resumeItem{Simulated kinematics and motion planning for robotic arm with Simulink and Rviz}
+            
+            % \resumeItem{Presented at 2020 conference on Biomechatronics and agricultural machinery engineering (Chiayi, Taiwan)}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+        {\textbf{Course Projects at NTU}}{Taipei, Taiwan}
+          {\textbf{Adaptive Control System}}{Mar. -- Jul. 2021}
+
+          \resumeItemListStart
+
+            \resumeItem{Collaborated with a team of 3 to implement various adaptive laws and Neural network algorithms to estimate slippage parameters of a tracked mobile robot}
+
+            \resumeItem{Constructed simulation models and animation using Simulink and python} 
+            
+          \resumeItemListEnd
+          \vspace{-3pt}
+    \resumeProjectHeading
+        {\textbf{Digital Control System}}{Mar. -- Jul. 2021}
+          \resumeItemListStart
+
+            \resumeItem{Executed system identification to estimate transfer function of motors on a tracked mobile robot}
+
+            \resumeItem{Analyzed motor transfer function using Matlab; performed Pole placement to design digital PI controller} 
+            
+            \resumeItem{Implemented digital controller on actuator to meet controller design specifications on a track mobile robot and improved trajectory tracking performance by 73 \%}
+            
+          \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %       {\textbf{Mechatronics and System Design}}{Sept. 2020 -- Feb. 2021}
+
+    %       \resumeItemListStart
+
+    %         \resumeItem{Collaborated with 2 teammates to develop an app to facilitate selection of a ball with specified color}
+
+    %         \resumeItem{Constructed a database by MySQL to send a delivery request for a mobile delivery robot to carry the target ball to designated destination while avoiding objects} 
+            
+    %       \resumeItemListEnd
+    
+    % \resumeProjectHeading
+    %     {\textbf{Robot Vision}}{Mar. -- Jul. 2020}
+    %       \resumeItemListStart
+
+    %         \resumeItem{Integrated computer vision and image processing techniques with OpenCV to track motion of a human hand and replicate it on a robotic hand}
+
+    %         \resumeItem{Collaborated with a team of 4 and 3D printed an open source bio-mimetic humanoid robot hand to execute various finger motions} 
+            
+    %       \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%     \pagebreak
+
+    
+% \begin{center}
+%     \textbf{\huge \scshape Juo-Tung Chen} \\ \vspace{6pt}
+%     %\textbf{ \scshape Name: } %$|$ 
+%     % \textbf{ \scshape U-M ID: 49858606} $|$ 
+%     %\textbf{ \scshape Electrical \& Computer Engineering M.S. at UMich } \\ \vspace{1pt}
+
+%     % Address
+%     %\href{https://}{\underline{\seticon{faMapMarker} 6F., No. 456, Zhongzheng Rd., Shilin Dist., Taipei City 111, Taiwan (R.O.C.) }} \\
+    
+%     %% with icon
+%     % \href{https://}{\underline{\seticon{faMapMarker} Baltimore MD, 21045}} $|$
+%     % \small \underline{\seticon{faPhone} +1(240) 565-5434 } $|$ \href{mailto:chenjuotung@gmail.com}{\underline{\seticon{faAt} chenjuotung@gmail.com}} $|$ \\ \vspace{4pt} \href{https://jjcc0704.wixsite.com/projects}{\underline{\large \seticon{faChain} {Portfolio website}} $|$ \href{https://www.linkedin.com/in/juo-tung-chen/}{\underline{\large \seticon{faChain} {LinkedIn}}}}
+
+%     \end{center}
+    
+
+%% Tokyo Lab %%
+    %\resumeSubheading
+     %{Cyber-Physical systems Lab, Tokyo Institute of Technology}{\textbf{Tokyo, Japan}}
+      %{\emph{Advisor: Prof. Takeshi Hatanaka}}{Dec. 2021 -- Mar. 2022 (expected)}
+        
+        % \resumeProjectHeading
+        %   {\emph{Project: Tea-Harvesting Robot}}{\emph{Jul. 2019 -- Aug. 2021}}
+        %   \resumeItemListStart
+        %     \resumeItem{Closely researched, developed, and implemented computational fluid dynamics project under Prof. Niu's supervision to verify computational results from exact solutions.}
+            
+        %     \resumeItem{Project: Computation of Unsteady Euler Equation JPL Nozzle Flows}
+             
+        %     \resumeItem{Deliverables: 1 international conference (ICFD 2018, Sendai)}
+        %   \resumeItemListEnd
+          
+          
+
+
+
+% %-----------Honor-----------
+% \section{\textbf{Honor and Distinctions}}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%           {\textbf{Taoyuan ROS summer school: 3rd place out of 10 teams in the advanced robot competition}}{Aug. 2020}
+%           \resumeItemListStart
+%             \resumeItem{Implemented SLAM and custom path planning algorithm on an ADLink NeuronBot (Omni-directional mobile robot) with ROS/ROS2 and Rviz}
+            
+%             \resumeItem{Conducted object recognition using OpenVino with 97\% of training accuracy}
+%           \resumeItemListEnd
+          
+%     % \resumeProjectHeading
+%     %       {\textbf{Japan Student Services Organization Scholarship}}{Dec. 2021 -- Mar. 2022}
+%     %       \resumeItemListStart
+%     %         \resumeItem{720 USD per month during stay in Japan, with a total of 2880 USD}
+%     %       \resumeItemListEnd
+          
+%     \resumeProjectHeading
+%           {\textbf{National Biomechatronics Field Robot Competition}}{Oct. 2019}
+%           \resumeItemListStart
+%             \resumeItem{Cooperated with 4 teammates to build a robot with the ability to move autonomously in a field including ramps, curve turns, and sharp turns.}
+%             \resumeItem{Designed object recognition method using Convolutional Neural Network (CNN) with 93\% of training accuracy to detect ripe fruits and controls a 4DOF 3D printed robotic arm to catch the fruits}
+%           \resumeItemListEnd      
+          
+%     \resumeSubHeadingListEnd    
+
+
+
+% \section{\textbf{Leadership Experience}}
+%     \resumeSubHeadingListStart
+
+%       \resumeProjectHeading
+%           {\textbf{Vice President:} Biomechatronics Engineering Student Association}{2019 -- 2020}
+%           \resumeItemListStart
+%             \resumeItem{Assisted in space planning for a new department building}
+%             \resumeItem{Served as a student representative and participated in the Curriculum Planning Committee meeting}
+%           \resumeItemListEnd
+          
+%       \resumeProjectHeading
+%           {\textbf{Lead Guitar Teaching Officer:} National Taiwan University Rock Club}{Feb. -- Jun. 2018}
+%           \resumeItemListStart
+%             \resumeItem{Arranged guitar teaching classes and prepared teaching materials for over 20 club members}
+%           \resumeItemListEnd
+    
+%     \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
