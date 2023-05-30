@@ -149,9 +149,9 @@
     % \href{www.linkedin.com/in/juo-tung-chen/}{\underline{ \seticon{faLinkedinSquare} {www.linkedin.com/in/juo-tung-chen}}}
 
     \href{https://}{{\seticon{faMapMarker} Baltimore MD}} $|$ \small {\seticon{faPhone} +1(240) 565-5434 }   $|$ \href{mailto:jchen396@jhu.edu}{ \seticon{faAt} \underline{jchen396@jhu.edu}} $|$ 
-    % \href{https://github.com/JuoTungChen}{ \seticon{\faGithubSquare} \underline{{https://github.com/JuoTungChen}}}
+    \href{https://github.com/JuoTungChen}{ \seticon{faGithubSquare} \underline{https://github.com/JuoTungChen} }
     
-    % \\ \vspace{4pt} 
+    \vspace{4pt} 
     \href{https://jjcc0704.wixsite.com/projects}{\seticon{faChain} \underline{ {Portfolio website}}} $|$ 
     \href{www.linkedin.com/in/juo-tung-chen/}{\seticon{faLinkedinSquare} \underline{ www.linkedin.com/in/juo-tung-chen}}
 
@@ -172,8 +172,9 @@
 
 
 %-----------EDUCATION-----------
+\vspace{-1cm}
 \section{ \textbf{Education}}
-\vspace{3pt}
+\vspace{2pt}
   \resumeSubHeadingListStart
     \resumeSubheading
       {JOHNS HOPKINS UNIVERSITY}{{Maryland}} 
@@ -211,6 +212,7 @@
   
 
   %-----------PROGRAMMING SKILLS-----------
+  \vspace{-0.5cm}
 \section{\textbf{Skills}}
 
       \resumeItemListStart
@@ -224,13 +226,14 @@
 
 
 %-----------EXPERIENCE-----------
+  \vspace{-0.3cm}
 \section{\textbf{Internship Experience}}
     \resumeSubHeadingListStart
 
 %%% Coretronic %%%
 
     \resumeSubheading
-        {\textbf{Coretronics Intelligent Robotics Corporation}}{\textbf{Hsinchu, Taiwan}}
+        {\textbf{\large{Coretronics Intelligent Robotics Corporation}}}{{Hsinchu, Taiwan}}
         {\textbf{R$\&$D Intern in AI Team}}{Jul. -- Sept. 2020}
 
           \resumeItemListStart
@@ -243,11 +246,26 @@
 
 
     %-----------PROJECTS-----------
+      \vspace{-0.5cm}
 \section{\textbf{Research Experience}}
     \resumeSubHeadingListStart
     \resumeSubheading
-        {\textbf{Course Projects at JHU}}{Maryland}
-          {\textbf{Machine Perception}}{Oct. -- Nov. 2022}
+        {\textbf{\large{Course Projects at JHU}}}{Maryland}
+        %% AOC Final Project
+          {\textbf{Motion Planning for Autonomous Parallel Parking}}{Dec. 2022 -- Jan. 2023}
+
+          \resumeItemListStart
+            \resumeItem{Implemented Direct Collocation method with Python to generate trajectories and control inputs with minimum control effort for autonomous parallel parking. }
+
+            \resumeItem{Incorporated obstacle avoidance feature by designing a algorithm calculating the minimum distance between the car's corner and the obstacles, and integrated it into inequality constraints}
+
+            \resumeItem{Designed and integrated an obstacle avoidance algorithm through incorporating minimum distance between the car and obstacles into inequality constraints}
+            
+            \resumeItem{Developed simulation environment with interactive user interface and 8 selectable parking slots}
+          \resumeItemListEnd
+          
+        %% MP Project 1
+          \resumeProjectHeading{\textbf{Adversarial Attacks and Defensive Distillation for Neural Network}}{Oct. -- Nov. 2022}
 
           \resumeItemListStart
 
@@ -256,15 +274,33 @@
             \resumeItem{Applied three adversarial attacks including Fast Gradient Sign Method (FGSM), Noise, and Semantic attack} 
             
             \resumeItem{Introduced Defensive-Distillation as a defense mechanism against FGSM attack and successfully retained an accuracy of 89.13 \% instead of 28.15 \% without defense} 
-            
-          \resumeItemListEnd
+
+          \resumeItemListEnd  
+
+        %% MP Project 2
+          % \resumeProjectHeading{\textbf{Structure From Motion}}{Oct. -- Nov. 2022}
+
+          % \resumeItemListStart
+          %   \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct object structures from video datasets }
+          %   \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track features within the first frame}
+
+          % \resumeItemListEnd
+
+        %% RDKDC Final Project
+          % \resumeProjectHeading{\textbf{}}{Oct. -- Nov. 2022}
+
+          % \resumeItemListStart
+          %   \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct object structures from video datasets }
+          %   \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track features within the first frame}
+
+          % \resumeItemListEnd
 
 
     
   %%% Lab %%%  
     %% RMML %%
     \resumeSubheading
-      {\textbf{National Taiwan University, Robots and Medical Mechatronics Lab}}{Taipei, Taiwan}
+      {\textbf{\large{National Taiwan University, Robots and Medical Mechatronics Lab}}}{Taipei, Taiwan}
       {\textbf{Collaborative Tea-Harvesting Robot}}{Jul. 2019 -- Aug. 2021}
 
         \resumeItemListStart
@@ -281,7 +317,7 @@
         \resumeItemListEnd
         
       \resumeProjectHeading
-      {\textbf{Intelligent sensing and precise cultivating system for tomato growth in greenhouses}}{}
+      {\textbf{Intelligent Sensing and Precise Cultivating System in Greenhouses}}{}
         \resumeItemListStart
             \resumeItem{Led a team of 5 undergraduate students to conduct research activities and organized tasks for team members}
         
@@ -291,30 +327,32 @@
             
             % \resumeItem{Presented at 2020 conference on Biomechatronics and agricultural machinery engineering (Chiayi, Taiwan)}
         \resumeItemListEnd
-        
-    \resumeSubheading
-        {\textbf{Course Projects at NTU}}{Taipei, Taiwan}
-          {\textbf{Adaptive Control System}}{Mar. -- Jul. 2021}
 
-          \resumeItemListStart
 
-            \resumeItem{Collaborated with a team of 3 to implement various adaptive laws and Neural network algorithms to estimate slippage parameters of a tracked mobile robot}
+%% Course projects at NTU
+    % \resumeSubheading
+    %     {\textbf{Course Projects at NTU}}{Taipei, Taiwan}
+    %       {\textbf{Adaptive Control System}}{Mar. -- Jul. 2021}
 
-            \resumeItem{Constructed simulation models and animation using Simulink and python} 
+    %       \resumeItemListStart
+
+    %         \resumeItem{Collaborated with a team of 3 to implement various adaptive laws and Neural network algorithms to estimate slippage parameters of a tracked mobile robot}
+
+    %         \resumeItem{Constructed simulation models and animation using Simulink and python} 
             
-          \resumeItemListEnd
-          \vspace{-3pt}
-    \resumeProjectHeading
-        {\textbf{Digital Control System}}{Mar. -- Jul. 2021}
-          \resumeItemListStart
+    %       \resumeItemListEnd
+    %       \vspace{-3pt}
+    % \resumeProjectHeading
+    %     {\textbf{Digital Control System}}{Mar. -- Jul. 2021}
+    %       \resumeItemListStart
 
-            \resumeItem{Executed system identification to estimate transfer function of motors on a tracked mobile robot}
+    %         \resumeItem{Executed system identification to estimate transfer function of motors on a tracked mobile robot}
 
-            \resumeItem{Analyzed motor transfer function using Matlab; performed Pole placement to design digital PI controller} 
+    %         \resumeItem{Analyzed motor transfer function using Matlab; performed Pole placement to design digital PI controller} 
             
-            \resumeItem{Implemented digital controller on actuator to meet controller design specifications on a track mobile robot and improved trajectory tracking performance by 73 \%}
+    %         \resumeItem{Implemented digital controller on actuator to meet controller design specifications on a track mobile robot and improved trajectory tracking performance by 73 \%}
             
-          \resumeItemListEnd
+    %       \resumeItemListEnd
 
     % \resumeProjectHeading
     %       {\textbf{Mechatronics and System Design}}{Sept. 2020 -- Feb. 2021}
@@ -379,15 +417,16 @@
 
 
 % %-----------Honor-----------
-% \section{\textbf{Honor and Distinctions}}
-%     \resumeSubHeadingListStart
-%     \resumeProjectHeading
-%           {\textbf{Taoyuan ROS summer school: 3rd place out of 10 teams in the advanced robot competition}}{Aug. 2020}
-%           \resumeItemListStart
-%             \resumeItem{Implemented SLAM and custom path planning algorithm on an ADLink NeuronBot (Omni-directional mobile robot) with ROS/ROS2 and Rviz}
+  \vspace{-0.5cm}
+\section{\textbf{Competitions}}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Taoyuan ROS summer school: 3rd place in the advanced robot competition}}{Aug. 2020}
+          \resumeItemListStart
+            \resumeItem{Implemented SLAM and path planning algorithm on an ADLink NeuronBot (Omni-directional mobile robot) with ROS/ROS2 and Rviz}
             
-%             \resumeItem{Conducted object recognition using OpenVino with 97\% of training accuracy}
-%           \resumeItemListEnd
+            \resumeItem{Conducted object recognition using OpenVino with 97\% of training accuracy}
+          \resumeItemListEnd
           
 %     % \resumeProjectHeading
 %     %       {\textbf{Japan Student Services Organization Scholarship}}{Dec. 2021 -- Mar. 2022}
@@ -402,7 +441,7 @@
 %             \resumeItem{Designed object recognition method using Convolutional Neural Network (CNN) with 93\% of training accuracy to detect ripe fruits and controls a 4DOF 3D printed robotic arm to catch the fruits}
 %           \resumeItemListEnd      
           
-%     \resumeSubHeadingListEnd    
+    \resumeSubHeadingListEnd    
 
 
 
