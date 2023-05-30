@@ -177,7 +177,7 @@
 \vspace{2pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {JOHNS HOPKINS UNIVERSITY}{{Maryland}} 
+      {JOHNS HOPKINS UNIVERSITY}{{Baltimore, MD}} 
       {\textbf{M.S.E. in Robotics - Perception and Cognitive Systems Track }}{Aug. 2022 - May. 2024 (expected)} \vspace{3pt}
       
       \resumeSubheading
@@ -217,7 +217,7 @@
 
       \resumeItemListStart
         \resumeItem{\textbf{Programming language:} C/C++, Python,  Matlab, \LaTeX, HTML, CSS, Javascript}
-        \resumeItem{\textbf{Software:} ROS, GIT, Docker, SolidWorks, Simulink, QT, Rviz, Gazebo, MoveIT, OpenCV, MySQL, Pytorch}
+        \resumeItem{\textbf{Software:} ROS, GIT, MoveIT, Gazebo, Docker, SolidWorks, Simulink, QT, OpenCV, MySQL, Pytorch}
         \resumeItem{\textbf{Operating system:} Linux, Windows, MacOS} 
         %\resumeItem{Qualifications: TOEFL 106 (R30/L28/S24/W24), GRE 325 (V:156, Q:169, AW:3.5)} 
         \resumeItem{\textbf{Embedded Systems:} Raspberry Pi, Arduino, TX2, Concerto(F28M3X)}
@@ -225,79 +225,26 @@
       \resumeItemListEnd
 
 
-%-----------EXPERIENCE-----------
-  \vspace{-0.3cm}
-\section{\textbf{Internship Experience}}
-    \resumeSubHeadingListStart
 
-%%% Coretronic %%%
-
-    \resumeSubheading
-        {\textbf{\large{Coretronics Intelligent Robotics Corporation}}}{{Hsinchu, Taiwan}}
-        {\textbf{R$\&$D Intern in AI Team}}{Jul. -- Sept. 2020}
-
-          \resumeItemListStart
-            \resumeItem{Implemented system identification using Matlab and constructed a 2D simulation for autonomous forklift using Simulink, QT, C++, and OpenCV}
-            \resumeItem{Performed research on Convex Elastic Smoothing algorithm and developed a Double Continuous Curvature path planning algorithm with an error $<$ 3\%}
-            
-          \resumeItemListEnd         
-          
-  \resumeSubHeadingListEnd
-
-
-    %-----------PROJECTS-----------
-      \vspace{-0.5cm}
-\section{\textbf{Research Experience}}
-    \resumeSubHeadingListStart
-    \resumeSubheading
-        {\textbf{\large{Course Projects at JHU}}}{Maryland}
-        %% AOC Final Project
-          {\textbf{Motion Planning for Autonomous Parallel Parking}}{Dec. 2022 -- Jan. 2023}
-
-          \resumeItemListStart
-            \resumeItem{Implemented Direct Collocation method with Python to generate trajectories and control inputs with minimum control effort for autonomous parallel parking. }
-
-            \resumeItem{Incorporated obstacle avoidance feature by designing a algorithm calculating the minimum distance between the car's corner and the obstacles, and integrated it into inequality constraints}
-
-            \resumeItem{Designed and integrated an obstacle avoidance algorithm through incorporating minimum distance between the car and obstacles into inequality constraints}
-            
-            \resumeItem{Developed simulation environment with interactive user interface and 8 selectable parking slots}
-          \resumeItemListEnd
-          
-        %% MP Project 1
-          \resumeProjectHeading{\textbf{Adversarial Attacks and Defensive Distillation for Neural Network}}{Oct. -- Nov. 2022}
-
-          \resumeItemListStart
-
-            \resumeItem{Implemented GoogLeNet using Pytorch and trained on CIFAR-10 dataset with an accuracy of 92.68 \%}
-
-            \resumeItem{Applied three adversarial attacks including Fast Gradient Sign Method (FGSM), Noise, and Semantic attack} 
-            
-            \resumeItem{Introduced Defensive-Distillation as a defense mechanism against FGSM attack and successfully retained an accuracy of 89.13 \% instead of 28.15 \% without defense} 
-
-          \resumeItemListEnd  
-
-        %% MP Project 2
-          % \resumeProjectHeading{\textbf{Structure From Motion}}{Oct. -- Nov. 2022}
-
-          % \resumeItemListStart
-          %   \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct object structures from video datasets }
-          %   \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track features within the first frame}
-
-          % \resumeItemListEnd
-
-        %% RDKDC Final Project
-          % \resumeProjectHeading{\textbf{}}{Oct. -- Nov. 2022}
-
-          % \resumeItemListStart
-          %   \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct object structures from video datasets }
-          %   \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track features within the first frame}
-
-          % \resumeItemListEnd
-
-
-    
   %%% Lab %%%  
+  \vspace{-0.2cm}
+  \section{\textbf{Research Experience}}
+  \resumeSubHeadingListStart
+
+    %% ICL %%
+    \resumeSubheading
+    {\textbf{\large{Johns Hopkins University, Intuitive Computing Lab}}}{Baltimore, MD}
+    {\textbf{Robotic Manipulation with AI-Powered Voice Control}}{Feb. 2023 -- Present}
+
+      \resumeItemListStart
+  
+        \resumeItem{Developed a C++ ROS package utilizing MoveIt! for the Franka Panda robot arm, enabling precise pick and place operations}
+        \resumeItem{Implemented an Alexa Skill using Flask-Ask to facilitate voice-controlled interaction with the Panda robot}
+        \resumeItem{Created an innovative end-user programming environment by integrating Alexa, GPT API, and the Panda robot arm}
+          
+      \resumeItemListEnd
+
+
     %% RMML %%
     \resumeSubheading
       {\textbf{\large{National Taiwan University, Robots and Medical Mechatronics Lab}}}{Taipei, Taiwan}
@@ -329,51 +276,7 @@
         \resumeItemListEnd
 
 
-%% Course projects at NTU
-    % \resumeSubheading
-    %     {\textbf{Course Projects at NTU}}{Taipei, Taiwan}
-    %       {\textbf{Adaptive Control System}}{Mar. -- Jul. 2021}
 
-    %       \resumeItemListStart
-
-    %         \resumeItem{Collaborated with a team of 3 to implement various adaptive laws and Neural network algorithms to estimate slippage parameters of a tracked mobile robot}
-
-    %         \resumeItem{Constructed simulation models and animation using Simulink and python} 
-            
-    %       \resumeItemListEnd
-    %       \vspace{-3pt}
-    % \resumeProjectHeading
-    %     {\textbf{Digital Control System}}{Mar. -- Jul. 2021}
-    %       \resumeItemListStart
-
-    %         \resumeItem{Executed system identification to estimate transfer function of motors on a tracked mobile robot}
-
-    %         \resumeItem{Analyzed motor transfer function using Matlab; performed Pole placement to design digital PI controller} 
-            
-    %         \resumeItem{Implemented digital controller on actuator to meet controller design specifications on a track mobile robot and improved trajectory tracking performance by 73 \%}
-            
-    %       \resumeItemListEnd
-
-    % \resumeProjectHeading
-    %       {\textbf{Mechatronics and System Design}}{Sept. 2020 -- Feb. 2021}
-
-    %       \resumeItemListStart
-
-    %         \resumeItem{Collaborated with 2 teammates to develop an app to facilitate selection of a ball with specified color}
-
-    %         \resumeItem{Constructed a database by MySQL to send a delivery request for a mobile delivery robot to carry the target ball to designated destination while avoiding objects} 
-            
-    %       \resumeItemListEnd
-    
-    % \resumeProjectHeading
-    %     {\textbf{Robot Vision}}{Mar. -- Jul. 2020}
-    %       \resumeItemListStart
-
-    %         \resumeItem{Integrated computer vision and image processing techniques with OpenCV to track motion of a human hand and replicate it on a robotic hand}
-
-    %         \resumeItem{Collaborated with a team of 4 and 3D printed an open source bio-mimetic humanoid robot hand to execute various finger motions} 
-            
-    %       \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
@@ -414,10 +317,28 @@
           
           
 
+%-----------EXPERIENCE-----------
+\vspace{-0.3cm}
+\section{\textbf{Internship Experience}}
+    \resumeSubHeadingListStart
+
+%%% Coretronic %%%
+
+    \resumeSubheading
+        {\textbf{\large{Coretronics Intelligent Robotics Corporation}}}{{Hsinchu, Taiwan}}
+        {\textbf{R$\&$D Intern in AI Team}}{Jul. -- Sept. 2020}
+
+          \resumeItemListStart
+            \resumeItem{Implemented system identification using Matlab and constructed a 2D simulation for autonomous forklift using Simulink, QT, C++, and OpenCV}
+            \resumeItem{Performed research on Convex Elastic Smoothing algorithm and developed a Double Continuous Curvature path planning algorithm with an error $<$ 3\%}
+            
+          \resumeItemListEnd         
+          
+  \resumeSubHeadingListEnd
 
 
 % %-----------Honor-----------
-  \vspace{-0.5cm}
+\vspace{-0.5cm}
 \section{\textbf{Competitions}}
     \resumeSubHeadingListStart
     \resumeProjectHeading
@@ -442,6 +363,124 @@
 %           \resumeItemListEnd      
           
     \resumeSubHeadingListEnd    
+
+    %-----------PROJECTS-----------
+    % \vspace{-0.5cm}
+    \section{\textbf{Projects}}
+        \resumeSubHeadingListStart
+        \resumeSubheading
+            {\textbf{\large{Course Projects at JHU}}}{Baltimore, MD}
+            %% RSP Final Project
+            {\textbf{Mixed reality pick and place}}{Dec. 2022 -- Jan. 2023}
+
+              \resumeItemListStart
+
+                \resumeItem{Developed an augmented reality (AR) pick and place system using Microsoft HoloLens and UR5 robot arm, enabling precise control and interaction with virtual objects for seamless task execution}
+    
+                \resumeItem{Created a ROS2 package to facilitate the movement of UR5 robot arm using MoveIt, ensuring smooth and object avoiding motion planning for pick and place operations}
+    
+                \resumeItem{Implemented a custom pick and place action library for UR5, based on the developed MoveIt package}
+                
+              \resumeItemListEnd
+
+
+            %% AOC Final Project
+              \resumeProjectHeading{\textbf{Motion Planning for Autonomous Parallel Parking}}{Dec. 2022 -- Jan. 2023}
+    
+              \resumeItemListStart
+                \resumeItem{Implemented Direct Collocation method with Python to generate trajectories and control inputs with minimum control effort for autonomous parallel parking}
+    
+                \resumeItem{Incorporated obstacle avoidance feature by designing a algorithm calculating the minimum distance between the car's corner and the obstacles, and integrated it into inequality constraints}
+    
+                \resumeItem{Designed and integrated an obstacle avoidance algorithm through incorporating minimum distance between the car and obstacles into inequality constraints}
+                
+                \resumeItem{Developed simulation environment with interactive user interface and 8 selectable parking slots}
+              \resumeItemListEnd
+              
+            %% MP Project 1
+              \resumeProjectHeading{\textbf{Adversarial Attacks and Defensive Distillation for Neural Network}}{Oct. -- Nov. 2022}
+    
+              \resumeItemListStart
+    
+                \resumeItem{Implemented GoogLeNet using Pytorch and trained on CIFAR-10 dataset with an accuracy of 92.68 \%}
+    
+                \resumeItem{Applied three adversarial attacks including Fast Gradient Sign Method (FGSM), Noise, and Semantic attack} 
+                
+                \resumeItem{Introduced Defensive-Distillation as a defense mechanism against FGSM attack and successfully retained an accuracy of 89.13 \% instead of 28.15 \% without defense} 
+    
+              \resumeItemListEnd  
+    
+            %% MP Project 2
+              \resumeProjectHeading{\textbf{Structure From Motion}}{Oct. -- Nov. 2022}
+    
+              \resumeItemListStart
+                \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct a 3D point cloud of the object from video datasets}
+                \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track prominent features across video frames}
+    
+              \resumeItemListEnd
+    
+            %% RDKDC Final Project
+              % \resumeProjectHeading{\textbf{}}{Oct. -- Nov. 2022}
+    
+              % \resumeItemListStart
+              %   \resumeItem{Implemented the Tomasi-Kanade factorization approach using Matlab to reconstruct object structures from video datasets }
+              %   \resumeItem{Utilized KLT(”Good Features to Track”) tracker to track features within the first frame}
+    
+              % \resumeItemListEnd
+
+
+      \vspace{5pt}
+
+      %% Course projects at NTU
+    \resumeSubheading
+        {\textbf{Course Projects at NTU}}{Taipei, Taiwan}
+          {\textbf{Adaptive Control System}}{Mar. -- Jul. 2021}
+
+          \resumeItemListStart
+
+            \resumeItem{Collaborated with a team of 3 to implement various adaptive laws and Neural network algorithms to estimate slippage parameters of a tracked mobile robot}
+
+            \resumeItem{Constructed simulation models and animation using Simulink and python} 
+            
+          \resumeItemListEnd
+          \vspace{-3pt}
+    \resumeProjectHeading
+        {\textbf{Digital Control System}}{Mar. -- Jul. 2021}
+          \resumeItemListStart
+
+            \resumeItem{Executed system identification to estimate transfer function of motors on a tracked mobile robot}
+
+            \resumeItem{Analyzed motor transfer function using Matlab; performed Pole placement to design digital PI controller} 
+            
+            \resumeItem{Implemented digital controller on actuator to meet controller design specifications on a track mobile robot and improved trajectory tracking performance by 73 \%}
+            
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Mechatronics and System Design}}{Sept. 2020 -- Feb. 2021}
+
+          \resumeItemListStart
+
+            \resumeItem{Collaborated with 2 teammates to develop an app to facilitate selection of a ball with specified color}
+
+            \resumeItem{Constructed a database by MySQL to send a delivery request for a mobile delivery robot to carry the target ball to designated destination while avoiding objects} 
+            
+          \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{Robot Vision}}{Mar. -- Jul. 2020}
+          \resumeItemListStart
+
+            \resumeItem{Integrated computer vision and image processing techniques with OpenCV to track motion of a human hand and replicate it on a robotic hand}
+
+            \resumeItem{Collaborated with a team of 4 and 3D printed an open source bio-mimetic humanoid robot hand to execute various finger motions} 
+            
+          \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
+
+
+
 
 
 
